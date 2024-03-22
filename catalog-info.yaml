@@ -2,6 +2,10 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: backend
+  description: This is the api to expose.
+  tags:
+    - java
+    - quarkus
   annotations:
     github.com/project-slug: POC-CONSENSUS/backend
 spec:
