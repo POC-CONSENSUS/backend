@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backend
+  annotations:
+    github.com/project-slug: POC-CONSENSUS/backend
+spec:
+  type: service
+  lifecycle: experimental
+  owner: group:poc-consensus/awesometeam
