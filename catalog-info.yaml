@@ -8,3 +8,7 @@ spec:
   type: service
   lifecycle: experimental
   owner: group:poc-consensus/awesometeam
+  system: naming-convention-generator
+  providesApis:
+    - assets-api
+
