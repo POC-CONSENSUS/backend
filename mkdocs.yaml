@@ -1,0 +1,7 @@
+site_name: backend-app
+site_description: Generated app for backend
+repo_url: https://github.com/POC-CONSENSUS/backend
+edit_uri: edit/main/docs
+
+plugins:
+  - techdocs-core
