@@ -4,12 +4,14 @@ metadata:
   name: backend
   description: This is the api to expose.
   tags:
-    - java
     - quarkus
+    - java
+    - maven
   annotations:
     github.com/project-slug: POC-CONSENSUS/backend
     quay.io/repository-slug: rh_ee_symartin/poc
-    backstage.io/kubernetes-id: backend
+    backstage.io/kubernetes-id: backend-app
+    janus-idp.io/tekton: backend-app
 spec:
   type: service
   lifecycle: experimental
@@ -17,3 +19,16 @@ spec:
   system: naming-convention-generator
   providesApis:
     - assets-api
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: "my-quarkus-app"
+  description: "A cool quarkus app"
+spec:
+  type: openapi
+  lifecycle: production
+  owner: "user1"
+  definition:
+    $text: ./openapi.yaml
+
