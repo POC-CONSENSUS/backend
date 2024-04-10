@@ -9,6 +9,7 @@ metadata:
   annotations:
     github.com/project-slug: POC-CONSENSUS/backend
     quay.io/repository-slug: rh_ee_symartin/poc
+    backstage.io/kubernetes-id: backend
 spec:
   type: service
   lifecycle: experimental
